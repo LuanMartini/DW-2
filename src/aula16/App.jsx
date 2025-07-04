@@ -1,5 +1,5 @@
 import Atividade6 from "./callback";
-
+import ExpensiveCalc from "./memo";
 
 export default function App() {
     return (
@@ -8,7 +8,9 @@ export default function App() {
             <hr />
             <h2> att6</h2>
             <Atividade6 />
-
+             <hr />         
+            <h3> att7</h3>
+            <ExpensiveCalc />
         </div>
     );
 }

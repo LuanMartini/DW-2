@@ -1,19 +1,21 @@
-import { useCallback, useState } from "react";
- function Botao({onClick}){
-    console.log("botao renderizado");
-    return <button onclick = {onclick}> incrementar</button>;
+import { useCallback, useState } from 'react';
+
+function Botao({ onclick }) {
+    console.log('Botão renderizado');
+    return <button onClick={onclick}>Incrementar</button>;
 }
 
 export default function Atividade6() {
-    const [count, setcount ] = useState(0);
-    const incrementar = useCallback(()=>
-    {setcount((prev)=> prev +1);
+    const [count, setCount] = useState(0);
 
+    const increment = useCallback(() => {
+        setCount((prevCount) => prevCount + 1);
     }, []);
-    return(
-        <div>
-            <p>contador: {count}</p>
-            <botao onclick={incrementar} />
-        </div>
-    )
+
+    return (
+        <>
+            <p>Contador: {count}</p>
+            <Botao onclick={increment} />
+        </>
+    );
 }
