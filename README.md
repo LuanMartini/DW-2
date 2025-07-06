@@ -14,3 +14,7 @@ If you are developing a production application, we recommend using TypeScript wi
 
 Vite
 Tailwind
+
+# Comandos para consertar Pack não instalados
+npm install styled-components
+npm audit fix
