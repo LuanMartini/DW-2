@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var preco = Number(window.prompt("Digite o preço do produto:"));
+        var desconto = Number(window.prompt("Digite o percentual de desconto:"));
+    
+        var valorDesconto = (preco * desconto) / 100;
+        var precoFinal = preco - valorDesconto;
+    
+        var mensagem = desconto >= 50 ? "Promoção imperdível!" : "Desconto aplicado.";
+    
+        window.alert(
+            "Preço original: R$" + preco.toFixed(2) + "\n" +
+            "Desconto: R$" + valorDesconto.toFixed(2) + "\n" +
+            "Preço final: R$" + precoFinal.toFixed(2) + "\n\n" +
+            mensagem
+        );
+    </script>
+</body>
+</html>

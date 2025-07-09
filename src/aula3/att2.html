@@ -1,0 +1,17 @@
+<h2>Jogo Par ou Ímpar</h2>
+<label>Digite um número: <input type="number" id="numero"></label><br><br>
+<button onclick="verificarParImpar()">Verificar</button>
+<p id="resultadoParImpar"></p>
+
+<script>
+    function verificarParImpar() {
+        let numero = Number(document.getElementById("numero").value);
+
+        numero % 2 === 0 ? numero++ : numero--;
+
+        let mensagem = numero % 2 === 0 ? "Agora é par!" : "Agora é ímpar!";
+
+        document.getElementById("resultadoParImpar").innerHTML = 
+            `Novo número: ${numero}<br><strong>${mensagem}</strong>`;
+    }
+</script>

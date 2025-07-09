@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            font: normal 20pt arial;
+        }
+        h1{
+            color: rgba(235, 231, 7, 0.925);
+        } 
+    </style>
+<body>
+    <h1>Precedência</h1> <!--Comentário em Html-->
+    <h2>A precedência de operadores em JavaScript determina quais operações são executadas primeiro em uma expressão.
+        Operadores com maior precedência são avaliados antes dos de menor precedência. </h2>
+
+    <script>
+    var n1 = Number(window.prompt('Digite um número: '));
+    var n2 = Number(window.prompt('Digite outro número: '))
+    var n3 = Number(window.prompt('Digite outro número qualquer: '))
+    var cal1 = n1 + n2 * n3;
+    var cal2 = n1 * (n2 - n3);
+    var cal3 = n1 / n2 * n3;
+    var cal4 = (n1 * n2) / n3;
+    var cal5 = n1 % n2 **n2;
+    var cal6 = (n1 + n2)**n3;
+    window.alert(`O valor do cálculo 1 é igual a ${cal1}`);
+    window.alert(`O valor do cálculo 2 é igual a ${cal2}`);
+    window.alert(`O valor do cálculo 3 é igual a ${cal3}`);
+    window.alert(`O valor do cálculo 4 é igual a ${cal4}`);
+    window.alert(`O valor do cálculo 5 é igual a ${cal5}`);
+    window.alert(`O valor do cálculo 6 é igual a ${cal6}`);
+
+    </script>
+</body>
+</html>

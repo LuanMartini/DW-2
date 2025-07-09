@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            font: normal 20pt arial;
+        }
+        h1{
+            color: rgba(235, 231, 7, 0.925);
+        } 
+    </style>
+<body>
+    <h1>Operadores</h1> <!--Comentário em Html-->
+    <p>Funcionamento das operações básicas</p>
+
+    <script>
+    var n1 = Number(window.prompt('Digite um número: '));
+    var n2 = Number(window.prompt('Digite outro número: '))
+    var n3 = Number(window.prompt('Digite outro número qualquer: '))
+    var soma = n1 + n2 + n3;
+    var sub = n1 - n2 - n3;
+    var mult = n1 * n2 * n3;
+    var div = n1 / n2;
+    var resto = n1 % n2;
+    var exp = n1 ** n2;
+    window.alert(`A soma entre ${n1}, ${n2} e ${n3} é igual a ${soma}`);
+    window.alert(`A subtração entre ${n1}, ${n2} e ${n3} é igual a ${sub}`);
+    window.alert(`A multiplicação entre ${n1}, ${n2} e ${n3} é igual a ${mult}`);
+    window.alert(`A divisão entre ${n1} e ${n2} é igual a ${div}`);
+    window.alert(`A resto entre ${n1} dividido por ${n2} é igual a ${resto}`);
+    window.alert(`A exponenciação de ${n1} elevado ${n2} é igual a ${exp}`);
+
+    </script>
+</body>
+</html>
