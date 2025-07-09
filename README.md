@@ -16,5 +16,4 @@ Vite
 Tailwind
 
 # Comandos para consertar Pack não instalados
-- npm install styled-components
 - npm audit fix
