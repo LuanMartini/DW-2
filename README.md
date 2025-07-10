@@ -1,8 +1,8 @@
 # React + Vite
 
-Anotações e trabalhos realizados na matéria de DW-2
+- Anotações e trabalhos realizados na matéria de DW-2
 
--link para acesso rápido https://luanmartini.vercel.app/
+- link para acesso rápido https://luanmartini.vercel.app/
 # Bibliotecas/Frameworks
 - Vite
 - Tailwind
