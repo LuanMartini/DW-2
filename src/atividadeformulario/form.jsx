@@ -1,4 +1,4 @@
-import styles from './atividadeformulario'
+import styles from './titulo.module.css'
 import { useState } from "react"
 import './app.css'
 function Formulario(){
@@ -29,7 +29,7 @@ function Formulario(){
         onSubmit={handleSubmit}
         className="bg-white p-8 rounded-2xl shadow-lg w-full max-w-md space-y-6"
       >
-        <h2 className="text-2xl font-bold text-center text-gray-700">
+        <h2 className= {styles.titulo} >
           Cadastro
         </h2>
 
