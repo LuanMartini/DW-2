@@ -1,4 +1,7 @@
-.titulo{
-    color: blue;
-    font-size: 24px;
+.titulo {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: #ff0000;
+  margin-bottom: 10px;
 }

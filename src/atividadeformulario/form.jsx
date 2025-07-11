@@ -1,32 +1,32 @@
 import styles from './titulo.module.css'
 import { useState } from "react"
 import './form.css'
-function Formulario(){
-    const [nome , setNome] = useState("")
-    const [email , setEmail] = useState("")
-    const handleSubmit = (e) => {
+
+function Formulario() {
+  const [nome, setNome] = useState("")
+  const [email, setEmail] = useState("")
+  
+  const handleSubmit = (e) => {
     e.preventDefault(); //pra n recarregar a pagina
 
     if (nome.trim() === '') { // trim remove os espaços
-        alert('Erro, digite novamente.');
-        return;
+      alert('Erro, digite novamente.');
+      return;
     }
 
     if (!email.includes('@') || !email.includes('.')) { // verifica se tem @ e . no email
-        alert('Digite um e-mail válido.');
-        return;
+      alert('Digite um e-mail válido.');
+      return;
     }
 
     alert('Formulário enviado com sucesso!');
     setNome('');
-    setEmail('')
-  
-    };
+    setEmail('');
+  };
 
-    return (
-  
+  return (
     <div className="container">
-      <h1 className={styles.titulo}></h1>
+      <h1 className={styles.titulo}>Renatop</h1>
       <form onSubmit={handleSubmit} className="form">
         <h2 className="form-title">Cadastro</h2>
 
