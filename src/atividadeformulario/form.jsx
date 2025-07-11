@@ -1,6 +1,6 @@
 import styles from './titulo.module.css'
 import { useState } from "react"
-import './app.css'
+import './form.css'
 function Formulario(){
     const [nome , setNome] = useState("")
     const [email , setEmail] = useState("")
