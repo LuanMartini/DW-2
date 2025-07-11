@@ -1,4 +1,6 @@
+import styles from './atividadeformulario'
 import { useState } from "react"
+import './app.css'
 function Formulario(){
     const [nome , setNome] = useState("")
     const [email , setEmail] = useState("")
