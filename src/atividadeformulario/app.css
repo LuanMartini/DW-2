@@ -1,16 +1,16 @@
 .container {
   min-height: 100vh;
-  background: linear-gradient(to bottom right, #f7fafc, #cfe8ff);
+  background: linear-gradient(to bottom right, #f3f4f6, #bfdbfe);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.formulario {
+.form {
   background-color: white;
   padding: 2rem;
   border-radius: 1rem;
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   width: 100%;
   max-width: 400px;
   display: flex;
@@ -18,44 +18,50 @@
   gap: 1.5rem;
 }
 
-.titulo {
+.form-title {
   font-size: 1.5rem;
   font-weight: bold;
   text-align: center;
-  color: #4a5568; /* text-gray-700 */
+  color: #374151;
 }
 
-.label {
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
   font-size: 0.875rem;
   font-weight: 600;
-  color: #4a5568;
+  color: #4b5563;
   margin-bottom: 0.25rem;
 }
 
-.input {
+.form-input {
   padding: 0.5rem;
-  border: 1px solid #d1d5db; /* border-gray-300 */
+  border: 1px solid #d1d5db;
   border-radius: 0.5rem;
   outline: none;
+  transition: box-shadow 0.2s;
 }
 
-.input:focus {
+.form-input:focus {
+  box-shadow: 0 0 0 2px #60a5fa;
   border-color: #60a5fa;
-  box-shadow: 0 0 0 2px rgba(96, 165, 250, 0.5);
 }
 
-.botao {
+.form-button {
   width: 100%;
   background-color: #3b82f6;
   color: white;
   font-weight: 600;
   padding: 0.5rem;
-  border: none;
   border-radius: 0.5rem;
-  transition: background-color 0.2s;
+  border: none;
   cursor: pointer;
+  transition: background-color 0.2s;
 }
 
-.botao:hover {
+.form-button:hover {
   background-color: #2563eb;
 }
