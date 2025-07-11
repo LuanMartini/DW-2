@@ -4,8 +4,10 @@ import './app.css';
  
 export default function App(){
     return(
-    <div className="app-container">
-      <Formulario />
-    </div>
+      <>
+        <div className="app-container">
+          <Formulario />
+        </div>
+      </>
     );
 }
