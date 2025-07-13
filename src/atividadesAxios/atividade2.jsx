@@ -1,25 +1,26 @@
-// Crie um componente que consuma a mesma API usando Axios e exiba os e-mails dos usuários.
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-export default function ListaEmail(){
-const [email, setEmail] = useState;
+function ListaEmail() {
+  const [usuarios, setUsuarios] = useState([]); // Corrigido: useState precisa de []
 
-useEffect(()=>{
-axios.get("https://jsonplaceholder.typicode.com/users")
-    .then(response => setEmail(response.data))
-    .catch(error => console.error(error))
-},[]);
+  useEffect(() => {
+    axios
+      .get("https://jsonplaceholder.typicode.com/users")
+      .then((response) => setUsuarios(response.data))
+      .catch((error) => console.error(error));
+  }, []);
 
-return(
-<div>
-    <h2>Lista E-mails</h2>
-    <ul>
-        {email.slice(0, 5).map(email => (
-            <li key={email.id}>{email.title}</li>
+  return (
+    <div>
+      <h2>Lista de E-mails</h2>
+      <ul>
+        {usuarios.map((usuario) => (
+          <li key={usuario.id}>{usuario.email}</li> // Corrigido: exibir email
         ))}
-    </ul>
-</div>
-);
-
+      </ul>
+    </div>
+  );
 }
+
+export default ListaEmail;
