@@ -1,7 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 
-function App() {
+function ListaPosts() {
   const [posts, setPosts] = useState([]); 
 
   function carregarPosts() {
@@ -40,4 +40,4 @@ function App() {
   );
 }
 
-export default App;
+export default ListaPosts;
