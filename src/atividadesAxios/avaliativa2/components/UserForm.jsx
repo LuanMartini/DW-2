@@ -4,7 +4,6 @@ function UserForm({ onSubmit, editingUser, onCancel }) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
 
-  // Quando editingUser muda, preenche o formulário
   useEffect(() => {
     if (editingUser) {
       setName(editingUser.name);
@@ -29,16 +28,16 @@ function UserForm({ onSubmit, editingUser, onCancel }) {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-4 max-w-md">
-      <h2 className="text-2xl font-semibold">
+    <form onSubmit={handleSubmit} className="space-y-4 max-w-md text-black">
+      <h2 className="text-2xl font-semibold text-black">
         {editingUser ? "Editar Usuário" : "Cadastrar Usuário"}
       </h2>
 
       <div>
-        <label className="block mb-1 font-medium">Nome</label>
+        <label className="block mb-1 font-medium text-black">Nome</label>
         <input
           type="text"
-          className="w-full px-3 py-2 border rounded-md"
+          className="w-full px-3 py-2 border rounded-md text-black"
           value={name}
           onChange={(e) => setName(e.target.value)}
           placeholder="Nome"
@@ -46,10 +45,10 @@ function UserForm({ onSubmit, editingUser, onCancel }) {
       </div>
 
       <div>
-        <label className="block mb-1 font-medium">E-mail</label>
+        <label className="block mb-1 font-medium text-black">E-mail</label>
         <input
           type="email"
-          className="w-full px-3 py-2 border rounded-md"
+          className="w-full px-3 py-2 border rounded-md text-black"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="email@exemplo.com"
