@@ -1,4 +1,3 @@
-import styles from '../titulo.module.css';
 import { useState } from "react";
 import ListaUsuarios from './ListaUsuarios';
 
@@ -50,7 +49,7 @@ function Formulario() {
 
   return (
     <div className="max-w-md mx-auto mt-12 p-6 border border-gray-300 rounded-lg bg-gray-100 shadow-md">
-      <h1 className={styles.titulo}>Renatop</h1>
+      <h1 className="text-3xl font-bold text-center mb-6 text-green-600">Renatop</h1>
 
       <form onSubmit={handleSubmit} className="flex flex-col">
         <h2 className="text-center mb-5 text-2xl text-gray-800 font-semibold">
