@@ -1,7 +1,6 @@
-// import ListaUsuarios from "./atividade1";
-// import ListaPosts from "./exemploaxios";
 
 import PraticaGuiada from "./praticaguiada";
+import ListaPosts from "./praticatrio";
 
 function App(){
     return(
@@ -9,6 +8,9 @@ function App(){
             <div>
                 <div>
                     <PraticaGuiada />
+                    <ListaPosts />
+                    
+
 
                 </div>
             </div>
