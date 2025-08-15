@@ -1,0 +1,7 @@
+{
+"produtos": [
+{ "id": 1, "nome": "Notebook Gamer", "preco": 5500.00, "categoria": "Eletrônicos" },
+{ "id": 2, "nome": "Smartphone Avançado", "preco": 3200.00, "categoria": "Eletrônicos" },
+{ "id": 3, "nome": "Fone de Ouvido Bluetooth", "preco": 450.00, "categoria": "Acessórios" }
+]
+}
